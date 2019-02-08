@@ -14,14 +14,14 @@ describe "GIT" do
 
   it "3. What is the syntax for committing all staged changes with the message
       'update link styles'?" do
-    answer = "git commit -m "update link styles""
+    answer = "git commit -m 'update link styles'
     encoded_answer = "8d06e2760cda4755f387db0db0e6c425b2ece976"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "4. What command allows you to add all previously all tracked, modified files
       and create a message, 'add img to index' for the commit in one command?" do
-    answer = "git add . commit -m "add img to index""
+    answer = "git add . commit -m 'add img to index'
     encoded_answer = "00565151beeb1fa3682d6386399eaf87b788a5bc"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -86,7 +86,7 @@ describe "GIT" do
 
   it "12. Is 'git pull' the same as running 'git fetch' followed by 'git merge'?" do
     # "true" or "false" in a string
-    answer = "?"
+    answer = "false"
 
     encoded_answer = "5ffe533b830f08a0326348a9160afafc8ada44db"
     expect(encode(answer)).to eq(encoded_answer)
